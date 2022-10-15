@@ -29,7 +29,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
@@ -38,6 +37,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px #140022;
 
+    transform: translate(-50%, -50%);
     transition: width 0.1, heigth 0.1;
     transition-timing-function: ease;
 }
@@ -84,12 +84,22 @@ form > div {
     padding-bottom: 12px;
 }
 
-form > div > input[type=email] {
-    width: 200px;
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
-form > div > input[type=password] {
-    width: 200px;
+div.campo > input {
+    background-color: #72b2c9da;
+    font-size: 1em;
+    width: calc(100% - 48px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
 }
 
 form > input[type=submit] {
