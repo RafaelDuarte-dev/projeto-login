@@ -49,6 +49,7 @@
     section#login > div#formulario {
         float: left;
         width: 50%;
+        transform: translateY(15px);
     }
 
     div#formulario > p {
